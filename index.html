@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Malcolm Milton</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="topNav" id="dropDownClick">
+                <li><a class="active" href="index.html">Malcolm Milton</a></li>
+                <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDownMenu()">&#8779;</a></li>
+                <li class="topNavRight"><a href="contact.html">Contact</a></li>
+                <li class="topNavRight"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="homePageCover">                      
+                        <img src="images/LOGO.png" class="logo">
+                        <br>
+                        <h1 class="nameHeader">Malcolm Milton</h1>
+                        <h1 class="lessMarginHeading">Software Engineer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container grey">
+            <div class="row">
+                <div class="col-6 middle">
+                    <h1>About Me</h1>
+                    <p>
+                        Salutations! <br>
+                        My name is Malcolm Milton, and I am an entry level Software Engineer. I am a recent graduate from Salisbury University with a bachelor's degree in Computer Science. Now that I have my degree, I am in the market looking for a position. In my spare time, I code video games for fun, and play other videos games to see how my own games can be improved. I also like to sit and theorize on ways to make the world work more efficiently. Visit the projects page to see what I have worked on.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function dropDownMenu()
+            {
+                var x = document.getElementById("dropDownClick");
+                if(x.className === "topNav")
+                {
+                    x.className += " responsive";
+                }
+                else
+                {
+                    x.className = "topNav";
+                }
+            }
+        </script>
+
+    </body>
+</html>

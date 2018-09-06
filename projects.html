@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="topNav" id="dropDownClick">
+                <li><a class="active" href="index.html">Malcolm Milton</a></li>
+                <li class="dropDownIcon"><a href="javascript:void(0)" onclick="dropDownMenu()">&#8779;</a></li>
+                <li class="topNavRight"><a href="contact.html">Contact</a></li>
+                <li class="topNavRight"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 middle">
+                    <h1 class="nameHeader">Projects</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container grey">
+            <div class="row">
+                <div class="col-8 middle">
+                    <div class="col-6">
+                        <h1>Tobble Impossible</h1>
+                        <p>
+                            This is my video game that I made for fun using the Unity IDE. The scripts were written in javascript, but later converted to C#. The game can be played <a href="https://malcmalc3.itch.io/tobble-impossible">here</a>.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/Tobble%20Logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 middle">
+                    <div class="col-6">
+                        <h1>Teacher Tools</h1>
+                        <p>
+                            The computer science program at my university required a two semester long senior project class. In this class, I worked in a group with five other students to create a website similar to Blackboard, where teachers can upload content and assignments for students. Languages used were HTML, CSS, PHP, and MySQL. I worked more on the backend side of this project. You can visit the site <a href="http://teachertools.herokuapp.com/default.php">here</a>.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/TeacherToolsLogo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container grey">
+            <div class="row">
+                <div class="col-8 middle">
+                    <div class="col-6">
+                        <h1>Change Detection Map</h1>
+                        <p>
+                            During the summer of 2016, I was fortunate enough to be selected to participate in a National Science Foundation program called Research Experience for Undergraduates. Here, I worked with two udergraduates from different schools, with the guidance of a proffesor. By the end of the program, we were able to create a Neural Network in Matlab that was able to detect changes in two SAR (synthetic aperture radar) images of the area, but taken at different times. The reason artificial intellegence is needed for this problem is because SAR images have varying speckle noise from image to image. At the end of the program, we were able to write a paper on our process that was accepted by the 2017 ICNC Conference. The paper can be read <a href="https://ieeexplore.ieee.org/document/7876261/">here</a> with an IEEE subscription.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/SARimages.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-8 middle">
+                    <div class="col-6">
+                        <h1>March Madness Final Four Predictor</h1>
+                        <p>
+                            One of the electives I decided to take as an undergraduate was Artificial Intelligence. For one of my projects in this class, I attempted to create a Neural Network, using the R language, that could predict the outcome of the NCAA March Madness bracket. I started off with trying to predict the outcome of the Final Four from 2017, using the season averages and outcomes from the years 2012-2016. In the future, I plan to gradually expand to all 64 teams, once the network is fine tuned.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/FinalFourImg.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--
+        <div class="container grey">
+            <div class="row">
+                <div class="col-8 middle">
+                    <div class="col-6">
+                        <h1>Rubik's Cube</h1>
+                        <p>
+                            The computer science program at my university required a two semester long senior project class. In this class, I worked in a group with five other students to create a website similar to Blackboard, where teachers can upload content and assignments for students. Languages used were HTML, CSS, PHP, and MySQL. I worked more on the backend side of this project. You can visit the site <a href="http://teachertools.herokuapp.com/default.php">here</a>.
+                        </p>
+                    </div>
+                    <div class="col-2">
+                        <img src="images/TeacherToolsLogo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
+
+
+        <script>
+            function dropDownMenu()
+            {
+                var x = document.getElementById("dropDownClick");
+                if(x.className === "topNav")
+                {
+                    x.className += " responsive";
+                }
+                else
+                {
+                    x.className = "topNav";
+                }
+            }
+        </script>
+    </body>
+</html>
